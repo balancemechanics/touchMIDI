@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Touch MIDI: Volca Keys</title>
+  <link rel="stylesheet" href="css/touchmidi.css">
+</head>
+
+<body onload="init()">
+  <div class="main_column" style="width:100%">
+    <div class="row">
+      <div class="column">
+        <div class="button toggle" label="A1 FX" midicc="2, 1, 0, 127"></div>
+        <div class="button toggle" label="A2 FX" midicc="2, 2, 0, 127"></div>
+        <div class="button toggle" label="A1 FX" midicc="2, 1, 0, 127"></div>
+        <div class="button toggle" label="A2 FX" midicc="2, 2, 0, 127"></div>
+        <!-- <div class="button" label="Octave     " midicc="1, 40, 50, 50" colour="#6644FF"></div>
+        <div class="button" label="Fifth      " midicc="1, 40, 70, 70" colour="#6644FF"></div>
+        <div class="button" label="Unison Ring" midicc="1, 40, 99, 99" colour="#6644FF"></div>
+        <div class="button" label="Poly Ring  " midicc="1, 40, 127, 127" colour="#6644FF"></div> -->
+      </div>
+
+      <div class="column">
+        <div class="button toggle" label="A1 FX" midicc="2, 1, 0, 127"></div>
+        <div class="button toggle" label="A2 FX" midicc="2, 2, 0, 127"></div>
+        <div class="button toggle" label="A1 FX" midicc="2, 1, 0, 127"></div>
+        <div class="button toggle" label="A2 FX" midicc="2, 2, 0, 127"></div>
+        <div class="encoder" label="Octave" midicc="1, 41" colour="#999999"></div>
+        <div class="encoder" label="Expres" midicc="1, 11" colour="#999999"></div>
+      </div>
+
+      <div class="column">
+        <div class="encoder" label="Delay\nTime" midicc="1, 52" colour="#FF002E"></div>
+        <div class="encoder" label="Delay\nFdbk" midicc="1, 53" colour="#FF002E"></div>
+      </div>
+
+      <div class="column">
+        <div class="encoder" label="Detune" midicc="1, 42"></div>
+        <div class="encoder" label="Porta" midicc="1, 5"></div>
+        <div class="encoder" label="Env\nPitch" midicc="1, 43"></div>
+      </div>
+
+      <div class="column">
+        <div class="encoder" label="Cutoff" midicc="1, 44"></div>
+        <div class="encoder" label="Peak" midicc="1, 127"></div>
+        <div class="encoder" label="Env\nFilter" midicc="1, 45"></div>
+      </div>
+
+      <div class="column">
+        <div class="encoder" label="LFO\nRate" midicc="1, 46"></div>
+        <div class="encoder" label="LFO\nPtch Mod" midicc="1, 47"></div>
+        <div class="encoder" label="LFO\nFilt Mod" midicc="1, 48"></div>
+      </div>
+    </div>
+
+    <div class="row"> <!-- second row -->
+      <div class="row"> <!-- ADSR -->
+        <div class="slider" label="FADE" midicc="2, 10" colour="#ff3300"></div>
+        <div class="slider" label="OUTPUT FADER" midicc="2, 16" colour="#ff3300"></div>
+        <div class="slider" label="Decay" midicc="1, 50" colour="#ff3300"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- **** Include JS libraries **** -->
+  <script src="lib/slider.js"></script>
+  <script src="lib/button.js"></script>
+  <script src="lib/encoder.js"></script>
+  <script src="lib/xypad.js"></script>
+  <script src="lib/midi.js"></script>
+  <script src="lib/touchmidi.js"></script>
+</body>
+</html>
